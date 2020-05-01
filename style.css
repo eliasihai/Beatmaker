@@ -31,18 +31,19 @@ i, svg {
     background: rgb(224, 194, 160);
 }
 
-.kick-pad.active{
+.kick-pad.active {
     background: rgb(59, 197, 231);
 }
-.snare-pad.active{
+
+.snare-pad.active {
     background: rgb(218, 58, 178);
 }
-.hihat-pad.active{
+
+.hihat-pad.active {
     background: rgb(241, 158, 64);
 }
 
-
-.sequencer{
+.sequencer {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -50,7 +51,7 @@ i, svg {
     justify-content: center;
 }
 
-.kick-track, .snare-track, .hihat-track{
+.kick-track, .snare-track, .hihat-track {
     display: flex;
     align-items: center;
     width: 70%;
@@ -68,28 +69,26 @@ i, svg {
     align-items: center;
     flex: 1;
     margin: 0rem 2rem;
-
 }
 
 .controls button {
     padding: 1rem;
     border: none;
-    background: rgb(88,88,88);
+    background: rgb(88, 88, 88);
     color: white;
     font-size: 1rem;
     cursor: pointer;
     transition: all 0.5s ease;
-
 }
 
-.pad{
+.pad {
     transition: all 0.5s ease;
 }
 
 .play {
     padding: 1rem 2rem;
     font-size: 1.5rem;
-    background: rgb(88,88,88);
+    background: rgb(88, 88, 88);
     color: white;
     border: none;
     cursor: pointer;
@@ -102,12 +101,45 @@ select {
     margin-left: 1rem;
 }
 
+.mute.active {
+    background: rgb(112, 88, 85);
+}
+
+.tempo {
+    margin: 3rem;
+    width: 30%;
+}
+
+.tempo-slider {
+    padding: 0.2rem;
+    -webkit-appearance: none;
+    margin: 1rem 0rem;
+    width: 100%;
+    position: relative;
+    background: rgb(88, 88, 88);
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.tempo-slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.tempo p {
+    font-size: 1.5rem;
+    margin: 2rem;
+    text-align: center;
+}
 
 @keyframes playTrack {
-    from{
+    from {
         transform: scale(1);
     }
-    to{
+    to {
         transform: scale(1.2);
     }
 }
